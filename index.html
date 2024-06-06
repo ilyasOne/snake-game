@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Classic Snake Game</title>
+    <style>
+      body {
+        background-color: #bed7eb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      #game {
+        background-color: #3e256e;
+        border: 2px solid #4790c0;
+      }
+      #score {
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+    </style>
+    <script>
+      function updateScore() {
+        document.getElementById("score").textContent = "Score: " + score;
+      }
+    </script>
+  </head>
+  <body>
+      <!-- <div id="score">Score: x</div> New score element -->
+    <canvas id="game" width="512" height="512"></canvas>
+    <script src="snake.js"></script> <!-- Link to your JavaScript file -->
+  </body>
+</html>
